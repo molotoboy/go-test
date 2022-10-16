@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 )
 
 func main() {
@@ -12,7 +11,7 @@ func main() {
 	var in string
 	_, err := fmt.Scan(&in)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Error: ", err)
 	}
 	fmt.Printf("%s", Counter(in))
 }
